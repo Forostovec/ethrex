@@ -313,12 +313,6 @@
 <li><strong><code>verifyBatchesAligned()</code></strong>: Verifies multiple batches in sequence using aligned proofs with Merkle verification</li>
 </ul>
 </li>
-<li>
-<p><strong>State Validation</strong></p>
-<ul>
-<li><strong><code>_verifyPublicData()</code></strong>: Internal function used during <code>verifyBatch()</code> or <code>verifyBatchesAligned()</code> that validates public proof inputs match previous data from <code>commitBatch()</code></li>
-</ul>
-</li>
 </ol>
 <h2 id="l2-contracts"><a class="header" href="#l2-contracts">L2 Contracts</a></h2>
 <h3 id="commonbridgel2"><a class="header" href="#commonbridgel2"><code>CommonBridgeL2</code></a></h3>
@@ -361,8 +355,8 @@
 </ul>
 </li>
 </ol>
-<h3 id="l2tol1messenger"><a class="header" href="#l2tol1messenger"><code>L2ToL1Messenger</code></a></h3>
-<p>The <code>L2ToL1Messenger</code> is a simple L2 smart contract that enables communication from L2 to L1 by emitting the data as <code>L1Message</code> events for sequencers to pick up.</p>
+<h3 id="messenger"><a class="header" href="#messenger"><code>Messenger</code></a></h3>
+<p>The <code>Messenger</code> is a simple L2 smart contract that enables communication from L2 to L1 by emitting the data as <code>L1Message</code> events for sequencers to pick up.</p>
 <h4 id="state-variables-3"><a class="header" href="#state-variables-3"><strong>State Variables</strong></a></h4>
 <ul>
 <li><strong><code>lastMessageId</code></strong>: Counter that tracks the ID of the last emitted message (incremented before each message is sent)</li>
